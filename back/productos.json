@@ -1,0 +1,23 @@
+[
+    {
+      "id": "001",
+      "marca": "Motorola",
+      "modelo": "G32",
+      "tipo": "Scooter",
+      "year": "2023",
+      "precio": "1500",
+      "imageUrl": [
+        "https://delcar.com.uy/wp-content/uploads/2021/02/5dbd9d4012f802d32cd7eacd6.jpg",
+        "https://delcar.com.uy/wp-content/uploads/2021/02/5dbd9d401350540831fb560d2.jpg"
+      ],
+  
+      "combustible": "Nafta",
+      "colorDisponible": ["Negro", "Rojo"],
+      "fichaTecnica": {
+        "motor": "4 tiempos",
+        "pasajeros": "2",
+        "cilindrada": "125",
+        "velocidades": "-"
+      }
+    }
+]

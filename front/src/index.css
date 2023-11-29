@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Style for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1000;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 4px; /* Rounded corners */
+  padding-top: 8px; /* Space for the arrow */
+  margin-top: 2px;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Create the triangular pointing top */
+.dropdown-content::before {
+  content: "";
+  position: absolute;
+  top: -8px; /* Position above the dropdown */
+  left: 20px; /* Adjust as necessary for alignment */
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #fff; /* Color of the triangle should match the dropdown */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change calors ofcarousel arrows and bullets */
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+}
+
+.swiper-button-prev {
+  color: rgb(73, 73, 73);
+}
+
+.swiper-button-next {
+  color: rgb(73, 73, 73);
+}
+
+/* Page transition */
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
